@@ -6,30 +6,32 @@ body, html {
 }
 
 .first {
-    margin-top: -14.5em;
+    margin-top: -10em;
+    padding-top: 1.5em;
     height:15em;
     background-color:#43a047;
     font-size:28px;
+    padding-left:1.5em;
+    padding-right:1.5em;
 }
 
-#firstInner {
+#joinNow {
     text-align:center;
     color: white;
     font-weight: 100;
     float:right;
     border-radius: 19px;
-    padding: 18px;
-    margin:1.2em;
+    padding: 16px;
     width: 350px;
     height: 75px;
     background-color:#2e7d32;
     transition: all 0.6s ease 0s;
 }
 
-#firstInner:hover {
+#joinNow:hover {
     
-    -webkit-box-shadow: 0 5px 3px -2px rgba(20,20,20,0.4);
-    -moz-box-shadow: 0 3px 5px -2px rgba(20,20,20,0.4);
+    -webkit-box-shadow: 0 6px 20px -2px rgba(20,20,20,0.4);
+    -moz-box-shadow: 0 6px 20px -2px rgba(20,20,20,0.4);
     box-shadow: 0 6px 20px -2px rgba(20,20,20,0.4);
     transition: all 0.3s ease 0s;
 }
