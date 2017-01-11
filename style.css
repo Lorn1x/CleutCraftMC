@@ -6,13 +6,63 @@ body, html {
 }
 
 .first {
+    -webkit-box-shadow: 0 6px 20px -2px rgba(20,20,20,0.4);
+    -moz-box-shadow: 0 6px 20px -2px rgba(20,20,20,0.4);
+    box-shadow: 20px 0px 20px 0px rgba(20,20,20,0.4);
     margin-top: -10em;
-    padding-top: 1.5em;
-    height:17em;
+    padding-top: 1.3em;
+    height:13em;
     background-color:#43a047;
-    font-size:26px;
+    font-size:1.65em;
     padding-left:1.5em;
     padding-right:1.5em;
+    
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.9s;
+}
+
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #joinNow {
@@ -43,8 +93,8 @@ body, html {
     font-size:36px;
 }
 
-h1{
-    
+p{
+    font-size:0.85em;
 }
 
 a {
@@ -63,9 +113,13 @@ a {
 		color: #7777ff;
 	}
 
+#DiscordServer:hover {
+		color: aquamarine;
+	}
+
 .parallax {
     /* The image used */
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
 
     /* Full height */
     height: 100%; 
