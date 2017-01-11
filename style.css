@@ -65,7 +65,7 @@ a {
 
 .parallax {
     /* The image used */
-    background-image: url(goku.png);
+    background-image: url(background.jpg);
 
     /* Full height */
     height: 100%; 
